@@ -33,7 +33,7 @@ pub fn clike_naive() {
     }
 }
 
-pub fn naive_to_buf<W: Write>(w: &mut W, until: u64) -> io::Result<()>{
+pub fn naive_to_buf<W: Write>(w: &mut W, until: u64) -> io::Result<()> {
     for i in 1u64..until {
         if i % 15 == 0 {
             write!(w, "FizzBuzz\n")?;
